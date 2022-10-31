@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+body {
+  font-family: Lexend Deca;
+}
+main {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.main_budget {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.text {
+  margin: 1rem 0 2rem;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .main_budget {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ADD BUDGET SECTION */
+input {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0 0.7rem;
+  border: 1px solid #000000;
+  outline: none;
+  padding-left: 1rem;
+  /* background-color: #6e6e6e; */
+  /* color: white; */
+}
+.error {
+  border-color: rgb(255, 26, 26);
+}
+.but_part {
+  text-align: end;
+}
+.budge_btn,
+.exp_btn {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.texts {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.add_budget_section,
+.add_expense_section {
+  padding: 1rem;
+  border: solid 2px rgb(10, 10, 10);
+}
+
+/* BUDGET SECTION */
+.budge_section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.sect_text {
+  margin-bottom: 2rem;
+}
+
+/* SHOW EXPENSE SECTION */
+.expense {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+.btns button {
+  border: none;
+  background-color: transparent;
+}
+.not_show {
+  display: none;
+}
+.edit_amount {
+  width: 60%;
+  outline: none;
+  border: 1px solid;
+}
+.update {
+  font-size: 10px;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.editor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.edit_name {
+  width: 90%;
+  outline: none;
+  border: 1px solid;
+}
+/* DELETING CLASSES */
+.deleting {
+  animation: deleting 1s 1;
+}
+
+@keyframes deleting {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+button {
+  cursor: pointer;
+}
